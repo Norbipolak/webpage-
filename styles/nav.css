@@ -1,0 +1,51 @@
+nav {
+    height: 80px;
+    background-color: var(--primary);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    height: 80px;
+    list-style: none;
+    line-height: 80px;
+}
+nav li:hover {
+    background-color: var(--secondary-darker);
+    cursor: pointer;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    padding:15px;
+}
+.selected-menu {
+    background-color: var(--secondary);
+}
+header {
+    height: 400px;
+    background-image: url("../images/header.jpg");
+    background-size: 500px 300px; /*szélesség és magasság*/
+    background-repeat: no-repeat; /*repeat x --> x tengelyen ismétlödik, repeat y --> y tengelyen ismétlödik*/
+    /*background-position-x: center; right, left és center*/
+    /*background-position-y: center; top, bottom és center*/
+    background-position: center; /*x és az y tengelyen is középen van*/
+    background-size: 100%; /*100% veszi fel a képernyőnek*/
+    border-bottom: 1px solid grey;
+}
+#logo {
+    position: relative;
+    background-image: url(../images/evil-corp-logo.png);
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:50%; /* a relatív mindig a kép jobb felső sarkéhoz igazít.*/
+    transform: translateY(50%) /*translateX(50%);*/ /* azt a pontot amihez képest viszonyít a CSS (bal felső sarok) azt
+    50%-val lejebb viszi; tehát a közepétöl ebben az esetben, 100%-ban a bal also saroktól.
+    translate x-vel ugyanazt meg lehet csinálni az x-tengelyen*/
+
+
+}
