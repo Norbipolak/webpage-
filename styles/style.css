@@ -57,3 +57,16 @@ h5 {
 .service-img img {
     width: 70%;
 }
+footer {
+    background-color: var(--dark-grey);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.footer-content {
+    padding:15px;
+}
+.footer-content h3 {
+    text-align: center;
+
+}
